@@ -1,10 +1,10 @@
-// Framework grid generation
-//
-// Used only by Bootstrap to generate the correct number of grid classes given
-// any value of `$grid-columns`.
+/* Framework grid generation*/
+/**/
+/* Used only by Bootstrap to generate the correct number of grid classes given*/
+/* any value of `$grid-columns`.*/
 
 @mixin make-grid-columns($columns: $grid-columns, $gutter: $grid-gutter-width, $breakpoints: $grid-breakpoints) {
-  // Common properties for all breakpoints
+  /* Common properties for all breakpoints*/
   %grid-column {
     position: relative;
     width: 100%;
@@ -16,7 +16,7 @@
     $infix: breakpoint-infix($breakpoint, $breakpoints);
 
     @if $columns > 0 {
-      // Allow columns to stretch full width below their breakpoints
+      /* Allow columns to stretch full width below their breakpoints*/
       @for $i from 1 through $columns {
         .col#{$infix}-#{$i} {
           @extend %grid-column;
@@ -30,11 +30,11 @@
     }
 
     @include media-breakpoint-up($breakpoint, $breakpoints) {
-      // Provide basic `.col-{bp}` classes for equal-width flexbox columns
+      /* Provide basic `.col-{bp}` classes for equal-width flexbox columns*/
       .col#{$infix} {
         flex-basis: 0;
         flex-grow: 1;
-        min-width: 0; // See https://github.com/twbs/bootstrap/issues/25410
+        min-width: 0; /* See https://github.com/twbs/bootstrap/issues/25410*/
         max-width: 100%;
       }
 
@@ -67,9 +67,9 @@
       }
 
       @if $columns > 0 {
-        // `$columns - 1` because offsetting by the width of an entire row isn't possible
+        /* `$columns - 1` because offsetting by the width of an entire row isn't possible*/
         @for $i from 0 through ($columns - 1) {
-          @if not ($infix == "" and $i == 0) { // Avoid emitting useless .offset-0
+          @if not ($infix == "" and $i == 0) { /* Avoid emitting useless .offset-0*/
             .offset#{$infix}-#{$i} {
               @include make-col-offset($i, $columns);
             }
@@ -79,3 +79,5 @@
     }
   }
 }
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIl9ncmlkLWZyYW1ld29yay5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLDZCQUEyQjtBQUMzQixHQUFDO0FBQ0QsK0VBQTZFO0FBQzdFLGlDQUErQjs7QUFFL0I7RUFDRSx5Q0FBdUM7RUFDdkM7SUFDRSxrQkFBa0I7SUFDbEIsV0FBVztJQUNYLDBCQUEwQjtJQUMxQix5QkFBeUI7RUFDM0I7O0VBRUE7SUFDRSxtREFBbUQ7O0lBRW5EO01BQ0UsK0RBQTZEO01BQzdEO1FBQ0U7VUFDRSxvQkFBb0I7UUFDdEI7TUFDRjtJQUNGOztJQUVBOztNQUVFLG9CQUFvQjtJQUN0Qjs7SUFFQTtNQUNFLHFFQUFtRTtNQUNuRTtRQUNFLGFBQWE7UUFDYixZQUFZO1FBQ1osWUFBWSxFQUFFLHNEQUFvRDtRQUNsRSxlQUFlO01BQ2pCOztNQUVBO1FBQ0U7VUFDRTtZQUNFLHFCQUFxQjtVQUN2QjtRQUNGO01BQ0Y7O01BRUE7UUFDRSx3QkFBd0I7TUFDMUI7O01BRUE7UUFDRTtVQUNFO1lBQ0UsK0JBQStCO1VBQ2pDO1FBQ0Y7TUFDRjs7TUFFQSx3QkFBd0IsU0FBUyxFQUFFOztNQUVuQyx1QkFBdUIsbUJBQW1CLEVBQUU7O01BRTVDO1FBQ0Usd0JBQXdCLFNBQVMsRUFBRTtNQUNyQzs7TUFFQTtRQUNFLGtGQUFnRjtRQUNoRjtVQUNFLHFDQUFxQyxvQ0FBa0M7WUFDckU7Y0FDRSxzQ0FBc0M7WUFDeEM7VUFDRjtRQUNGO01BQ0Y7SUFDRjtFQUNGO0FBQ0YiLCJmaWxlIjoiX2dyaWQtZnJhbWV3b3JrLnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIvLyBGcmFtZXdvcmsgZ3JpZCBnZW5lcmF0aW9uXG4vL1xuLy8gVXNlZCBvbmx5IGJ5IEJvb3RzdHJhcCB0byBnZW5lcmF0ZSB0aGUgY29ycmVjdCBudW1iZXIgb2YgZ3JpZCBjbGFzc2VzIGdpdmVuXG4vLyBhbnkgdmFsdWUgb2YgYCRncmlkLWNvbHVtbnNgLlxuXG5AbWl4aW4gbWFrZS1ncmlkLWNvbHVtbnMoJGNvbHVtbnM6ICRncmlkLWNvbHVtbnMsICRndXR0ZXI6ICRncmlkLWd1dHRlci13aWR0aCwgJGJyZWFrcG9pbnRzOiAkZ3JpZC1icmVha3BvaW50cykge1xuICAvLyBDb21tb24gcHJvcGVydGllcyBmb3IgYWxsIGJyZWFrcG9pbnRzXG4gICVncmlkLWNvbHVtbiB7XG4gICAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAgIHdpZHRoOiAxMDAlO1xuICAgIHBhZGRpbmctcmlnaHQ6ICRndXR0ZXIgLyAyO1xuICAgIHBhZGRpbmctbGVmdDogJGd1dHRlciAvIDI7XG4gIH1cblxuICBAZWFjaCAkYnJlYWtwb2ludCBpbiBtYXAta2V5cygkYnJlYWtwb2ludHMpIHtcbiAgICAkaW5maXg6IGJyZWFrcG9pbnQtaW5maXgoJGJyZWFrcG9pbnQsICRicmVha3BvaW50cyk7XG5cbiAgICBAaWYgJGNvbHVtbnMgPiAwIHtcbiAgICAgIC8vIEFsbG93IGNvbHVtbnMgdG8gc3RyZXRjaCBmdWxsIHdpZHRoIGJlbG93IHRoZWlyIGJyZWFrcG9pbnRzXG4gICAgICBAZm9yICRpIGZyb20gMSB0aHJvdWdoICRjb2x1bW5zIHtcbiAgICAgICAgLmNvbCN7JGluZml4fS0jeyRpfSB7XG4gICAgICAgICAgQGV4dGVuZCAlZ3JpZC1jb2x1bW47XG4gICAgICAgIH1cbiAgICAgIH1cbiAgICB9XG5cbiAgICAuY29sI3skaW5maXh9LFxuICAgIC5jb2wjeyRpbmZpeH0tYXV0byB7XG4gICAgICBAZXh0ZW5kICVncmlkLWNvbHVtbjtcbiAgICB9XG5cbiAgICBAaW5jbHVkZSBtZWRpYS1icmVha3BvaW50LXVwKCRicmVha3BvaW50LCAkYnJlYWtwb2ludHMpIHtcbiAgICAgIC8vIFByb3ZpZGUgYmFzaWMgYC5jb2wte2JwfWAgY2xhc3NlcyBmb3IgZXF1YWwtd2lkdGggZmxleGJveCBjb2x1bW5zXG4gICAgICAuY29sI3skaW5maXh9IHtcbiAgICAgICAgZmxleC1iYXNpczogMDtcbiAgICAgICAgZmxleC1ncm93OiAxO1xuICAgICAgICBtaW4td2lkdGg6IDA7IC8vIFNlZSBodHRwczovL2dpdGh1Yi5jb20vdHdicy9ib290c3RyYXAvaXNzdWVzLzI1NDEwXG4gICAgICAgIG1heC13aWR0aDogMTAwJTtcbiAgICAgIH1cblxuICAgICAgQGlmICRncmlkLXJvdy1jb2x1bW5zID4gMCB7XG4gICAgICAgIEBmb3IgJGkgZnJvbSAxIHRocm91Z2ggJGdyaWQtcm93LWNvbHVtbnMge1xuICAgICAgICAgIC5yb3ctY29scyN7JGluZml4fS0jeyRpfSB7XG4gICAgICAgICAgICBAaW5jbHVkZSByb3ctY29scygkaSk7XG4gICAgICAgICAgfVxuICAgICAgICB9XG4gICAgICB9XG5cbiAgICAgIC5jb2wjeyRpbmZpeH0tYXV0byB7XG4gICAgICAgIEBpbmNsdWRlIG1ha2UtY29sLWF1dG8oKTtcbiAgICAgIH1cblxuICAgICAgQGlmICRjb2x1bW5zID4gMCB7XG4gICAgICAgIEBmb3IgJGkgZnJvbSAxIHRocm91Z2ggJGNvbHVtbnMge1xuICAgICAgICAgIC5jb2wjeyRpbmZpeH0tI3skaX0ge1xuICAgICAgICAgICAgQGluY2x1ZGUgbWFrZS1jb2woJGksICRjb2x1bW5zKTtcbiAgICAgICAgICB9XG4gICAgICAgIH1cbiAgICAgIH1cblxuICAgICAgLm9yZGVyI3skaW5maXh9LWZpcnN0IHsgb3JkZXI6IC0xOyB9XG5cbiAgICAgIC5vcmRlciN7JGluZml4fS1sYXN0IHsgb3JkZXI6ICRjb2x1bW5zICsgMTsgfVxuXG4gICAgICBAZm9yICRpIGZyb20gMCB0aHJvdWdoICRjb2x1bW5zIHtcbiAgICAgICAgLm9yZGVyI3skaW5maXh9LSN7JGl9IHsgb3JkZXI6ICRpOyB9XG4gICAgICB9XG5cbiAgICAgIEBpZiAkY29sdW1ucyA+IDAge1xuICAgICAgICAvLyBgJGNvbHVtbnMgLSAxYCBiZWNhdXNlIG9mZnNldHRpbmcgYnkgdGhlIHdpZHRoIG9mIGFuIGVudGlyZSByb3cgaXNuJ3QgcG9zc2libGVcbiAgICAgICAgQGZvciAkaSBmcm9tIDAgdGhyb3VnaCAoJGNvbHVtbnMgLSAxKSB7XG4gICAgICAgICAgQGlmIG5vdCAoJGluZml4ID09IFwiXCIgYW5kICRpID09IDApIHsgLy8gQXZvaWQgZW1pdHRpbmcgdXNlbGVzcyAub2Zmc2V0LTBcbiAgICAgICAgICAgIC5vZmZzZXQjeyRpbmZpeH0tI3skaX0ge1xuICAgICAgICAgICAgICBAaW5jbHVkZSBtYWtlLWNvbC1vZmZzZXQoJGksICRjb2x1bW5zKTtcbiAgICAgICAgICAgIH1cbiAgICAgICAgICB9XG4gICAgICAgIH1cbiAgICAgIH1cbiAgICB9XG4gIH1cbn1cbiJdfQ== */

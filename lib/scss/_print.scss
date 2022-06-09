@@ -1,22 +1,22 @@
-// stylelint-disable declaration-no-important, selector-no-qualifying-type
+/* stylelint-disable declaration-no-important, selector-no-qualifying-type*/
 
-// Source: https://github.com/h5bp/main.css/blob/master/src/_print.css
+/* Source: https://github.com/h5bp/main.css/blob/master/src/_print.css*/
 
-// ==========================================================================
-// Print styles.
-// Inlined to avoid the additional HTTP request:
-// https://www.phpied.com/delay-loading-your-print-css/
-// ==========================================================================
+/* ==========================================================================*/
+/* Print styles.*/
+/* Inlined to avoid the additional HTTP request:*/
+/* https://www.phpied.com/delay-loading-your-print-css/*/
+/* ==========================================================================*/
 
 @if $enable-print-styles {
   @media print {
     *,
     *::before,
     *::after {
-      // Bootstrap specific; comment out `color` and `background`
-      //color: $black !important; // Black prints faster
+      /* Bootstrap specific; comment out `color` and `background`*/
+      /*color: $black !important; // Black prints faster*/
       text-shadow: none !important;
-      //background: transparent !important;
+      /*background: transparent !important;*/
       box-shadow: none !important;
     }
 
@@ -26,39 +26,39 @@
       }
     }
 
-    // Bootstrap specific; comment the following selector out
-    //a[href]::after {
-    //  content: " (" attr(href) ")";
-    //}
+    /* Bootstrap specific; comment the following selector out*/
+    /*a[href]::after {*/
+    /*  content: " (" attr(href) ")";*/
+    /*}*/
 
     abbr[title]::after {
       content: " (" attr(title) ")";
     }
 
-    // Bootstrap specific; comment the following selector out
-    //
-    // Don't show links that are fragment identifiers,
-    // or use the `javascript:` pseudo protocol
-    //
+    /* Bootstrap specific; comment the following selector out*/
+    /**/
+    /* Don't show links that are fragment identifiers,*/
+    /* or use the `javascript:` pseudo protocol*/
+    /**/
 
-    //a[href^="#"]::after,
-    //a[href^="javascript:"]::after {
-    // content: "";
-    //}
+    /*a[href^="#"]::after,*/
+    /*a[href^="javascript:"]::after {*/
+    /* content: "";*/
+    /*}*/
 
     pre {
       white-space: pre-wrap !important;
     }
     pre,
     blockquote {
-      border: $border-width solid $gray-500; // Bootstrap custom code; using `$border-width` instead of 1px
+      border: $border-width solid $gray-500; /* Bootstrap custom code; using `$border-width` instead of 1px*/
       page-break-inside: avoid;
     }
 
-    //
-    // Printing Tables:
-    // https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
-    //
+    /**/
+    /* Printing Tables:*/
+    /* https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables*/
+    /**/
 
     thead {
       display: table-header-group;
@@ -81,11 +81,11 @@
       page-break-after: avoid;
     }
 
-    // Bootstrap specific changes start
+    /* Bootstrap specific changes start*/
 
-    // Specify a size and min-width to make printing closer across browsers.
-    // We don't set margin here because it breaks `size` in Chrome. We also
-    // don't use `!important` on `size` as it breaks in Chrome.
+    /* Specify a size and min-width to make printing closer across browsers.*/
+    /* We don't set margin here because it breaks `size` in Chrome. We also*/
+    /* don't use `!important` on `size` as it breaks in Chrome.*/
     @page {
       size: $print-page-size;
     }
@@ -96,7 +96,7 @@
       min-width: $print-body-min-width !important;
     }
 
-    // Bootstrap components
+    /* Bootstrap components*/
     .navbar {
       display: none;
     }
@@ -136,6 +136,8 @@
       border-color: $table-border-color;
     }
 
-    // Bootstrap specific changes end
+    /* Bootstrap specific changes end*/
   }
 }
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIl9wcmludC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLDJFQUF5RTs7QUFFekUsdUVBQXFFOztBQUVyRSw4RUFBNEU7QUFDNUUsaUJBQWU7QUFDZixpREFBK0M7QUFDL0Msd0RBQXNEO0FBQ3RELDhFQUE0RTs7QUFFNUU7RUFDRTtJQUNFOzs7TUFHRSw0REFBMEQ7TUFDMUQsbURBQWlEO01BQ2pELDRCQUE0QjtNQUM1QixzQ0FBb0M7TUFDcEMsMkJBQTJCO0lBQzdCOztJQUVBO01BQ0U7UUFDRSwwQkFBMEI7TUFDNUI7SUFDRjs7SUFFQSwwREFBd0Q7SUFDeEQsbUJBQWlCO0lBQ2pCLGtDQUFnQztJQUNoQyxJQUFFOztJQUVGO01BQ0UsNkJBQTZCO0lBQy9COztJQUVBLDBEQUF3RDtJQUN4RCxHQUFDO0lBQ0QsbURBQWlEO0lBQ2pELDRDQUEwQztJQUMxQyxHQUFDOztJQUVELHVCQUFxQjtJQUNyQixrQ0FBZ0M7SUFDaEMsZ0JBQWM7SUFDZCxJQUFFOztJQUVGO01BQ0UsZ0NBQWdDO0lBQ2xDO0lBQ0E7O01BRUUscUNBQXFDLEVBQUUsK0RBQTZEO01BQ3BHLHdCQUF3QjtJQUMxQjs7SUFFQSxHQUFDO0lBQ0Qsb0JBQWtCO0lBQ2xCLGtHQUFnRztJQUNoRyxHQUFDOztJQUVEO01BQ0UsMkJBQTJCO0lBQzdCOztJQUVBOztNQUVFLHdCQUF3QjtJQUMxQjs7SUFFQTs7O01BR0UsVUFBVTtNQUNWLFNBQVM7SUFDWDs7SUFFQTs7TUFFRSx1QkFBdUI7SUFDekI7O0lBRUEsb0NBQWtDOztJQUVsQyx5RUFBdUU7SUFDdkUsd0VBQXNFO0lBQ3RFLDREQUEwRDtJQUMxRDtNQUNFLHNCQUFzQjtJQUN4QjtJQUNBO01BQ0UsMkNBQTJDO0lBQzdDO0lBQ0E7TUFDRSwyQ0FBMkM7SUFDN0M7O0lBRUEsd0JBQXNCO0lBQ3RCO01BQ0UsYUFBYTtJQUNmO0lBQ0E7TUFDRSxrQ0FBa0M7SUFDcEM7O0lBRUE7TUFDRSxvQ0FBb0M7O01BRXBDOztRQUVFLG1DQUFtQztNQUNyQztJQUNGOztJQUVBO01BQ0U7O1FBRUUsc0NBQXNDO01BQ3hDO0lBQ0Y7O0lBRUE7TUFDRSxjQUFjOztNQUVkOzs7O1FBSUUsaUNBQWlDO01BQ25DO0lBQ0Y7O0lBRUE7TUFDRSxjQUFjO01BQ2QsaUNBQWlDO0lBQ25DOztJQUVBLGtDQUFnQztFQUNsQztBQUNGIiwiZmlsZSI6Il9wcmludC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLy8gc3R5bGVsaW50LWRpc2FibGUgZGVjbGFyYXRpb24tbm8taW1wb3J0YW50LCBzZWxlY3Rvci1uby1xdWFsaWZ5aW5nLXR5cGVcblxuLy8gU291cmNlOiBodHRwczovL2dpdGh1Yi5jb20vaDVicC9tYWluLmNzcy9ibG9iL21hc3Rlci9zcmMvX3ByaW50LmNzc1xuXG4vLyA9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PVxuLy8gUHJpbnQgc3R5bGVzLlxuLy8gSW5saW5lZCB0byBhdm9pZCB0aGUgYWRkaXRpb25hbCBIVFRQIHJlcXVlc3Q6XG4vLyBodHRwczovL3d3dy5waHBpZWQuY29tL2RlbGF5LWxvYWRpbmcteW91ci1wcmludC1jc3MvXG4vLyA9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PVxuXG5AaWYgJGVuYWJsZS1wcmludC1zdHlsZXMge1xuICBAbWVkaWEgcHJpbnQge1xuICAgICosXG4gICAgKjo6YmVmb3JlLFxuICAgICo6OmFmdGVyIHtcbiAgICAgIC8vIEJvb3RzdHJhcCBzcGVjaWZpYzsgY29tbWVudCBvdXQgYGNvbG9yYCBhbmQgYGJhY2tncm91bmRgXG4gICAgICAvL2NvbG9yOiAkYmxhY2sgIWltcG9ydGFudDsgLy8gQmxhY2sgcHJpbnRzIGZhc3RlclxuICAgICAgdGV4dC1zaGFkb3c6IG5vbmUgIWltcG9ydGFudDtcbiAgICAgIC8vYmFja2dyb3VuZDogdHJhbnNwYXJlbnQgIWltcG9ydGFudDtcbiAgICAgIGJveC1zaGFkb3c6IG5vbmUgIWltcG9ydGFudDtcbiAgICB9XG5cbiAgICBhIHtcbiAgICAgICY6bm90KC5idG4pIHtcbiAgICAgICAgdGV4dC1kZWNvcmF0aW9uOiB1bmRlcmxpbmU7XG4gICAgICB9XG4gICAgfVxuXG4gICAgLy8gQm9vdHN0cmFwIHNwZWNpZmljOyBjb21tZW50IHRoZSBmb2xsb3dpbmcgc2VsZWN0b3Igb3V0XG4gICAgLy9hW2hyZWZdOjphZnRlciB7XG4gICAgLy8gIGNvbnRlbnQ6IFwiIChcIiBhdHRyKGhyZWYpIFwiKVwiO1xuICAgIC8vfVxuXG4gICAgYWJiclt0aXRsZV06OmFmdGVyIHtcbiAgICAgIGNvbnRlbnQ6IFwiIChcIiBhdHRyKHRpdGxlKSBcIilcIjtcbiAgICB9XG5cbiAgICAvLyBCb290c3RyYXAgc3BlY2lmaWM7IGNvbW1lbnQgdGhlIGZvbGxvd2luZyBzZWxlY3RvciBvdXRcbiAgICAvL1xuICAgIC8vIERvbid0IHNob3cgbGlua3MgdGhhdCBhcmUgZnJhZ21lbnQgaWRlbnRpZmllcnMsXG4gICAgLy8gb3IgdXNlIHRoZSBgamF2YXNjcmlwdDpgIHBzZXVkbyBwcm90b2NvbFxuICAgIC8vXG5cbiAgICAvL2FbaHJlZl49XCIjXCJdOjphZnRlcixcbiAgICAvL2FbaHJlZl49XCJqYXZhc2NyaXB0OlwiXTo6YWZ0ZXIge1xuICAgIC8vIGNvbnRlbnQ6IFwiXCI7XG4gICAgLy99XG5cbiAgICBwcmUge1xuICAgICAgd2hpdGUtc3BhY2U6IHByZS13cmFwICFpbXBvcnRhbnQ7XG4gICAgfVxuICAgIHByZSxcbiAgICBibG9ja3F1b3RlIHtcbiAgICAgIGJvcmRlcjogJGJvcmRlci13aWR0aCBzb2xpZCAkZ3JheS01MDA7IC8vIEJvb3RzdHJhcCBjdXN0b20gY29kZTsgdXNpbmcgYCRib3JkZXItd2lkdGhgIGluc3RlYWQgb2YgMXB4XG4gICAgICBwYWdlLWJyZWFrLWluc2lkZTogYXZvaWQ7XG4gICAgfVxuXG4gICAgLy9cbiAgICAvLyBQcmludGluZyBUYWJsZXM6XG4gICAgLy8gaHR0cHM6Ly93ZWIuYXJjaGl2ZS5vcmcvd2ViLzIwMTgwODE1MTUwOTM0L2h0dHA6Ly9jc3MtZGlzY3Vzcy5pbmN1dGlvLmNvbS93aWtpL1ByaW50aW5nX1RhYmxlc1xuICAgIC8vXG5cbiAgICB0aGVhZCB7XG4gICAgICBkaXNwbGF5OiB0YWJsZS1oZWFkZXItZ3JvdXA7XG4gICAgfVxuXG4gICAgdHIsXG4gICAgaW1nIHtcbiAgICAgIHBhZ2UtYnJlYWstaW5zaWRlOiBhdm9pZDtcbiAgICB9XG5cbiAgICBwLFxuICAgIGgyLFxuICAgIGgzIHtcbiAgICAgIG9ycGhhbnM6IDM7XG4gICAgICB3aWRvd3M6IDM7XG4gICAgfVxuXG4gICAgaDIsXG4gICAgaDMge1xuICAgICAgcGFnZS1icmVhay1hZnRlcjogYXZvaWQ7XG4gICAgfVxuXG4gICAgLy8gQm9vdHN0cmFwIHNwZWNpZmljIGNoYW5nZXMgc3RhcnRcblxuICAgIC8vIFNwZWNpZnkgYSBzaXplIGFuZCBtaW4td2lkdGggdG8gbWFrZSBwcmludGluZyBjbG9zZXIgYWNyb3NzIGJyb3dzZXJzLlxuICAgIC8vIFdlIGRvbid0IHNldCBtYXJnaW4gaGVyZSBiZWNhdXNlIGl0IGJyZWFrcyBgc2l6ZWAgaW4gQ2hyb21lLiBXZSBhbHNvXG4gICAgLy8gZG9uJ3QgdXNlIGAhaW1wb3J0YW50YCBvbiBgc2l6ZWAgYXMgaXQgYnJlYWtzIGluIENocm9tZS5cbiAgICBAcGFnZSB7XG4gICAgICBzaXplOiAkcHJpbnQtcGFnZS1zaXplO1xuICAgIH1cbiAgICBib2R5IHtcbiAgICAgIG1pbi13aWR0aDogJHByaW50LWJvZHktbWluLXdpZHRoICFpbXBvcnRhbnQ7XG4gICAgfVxuICAgIC5jb250YWluZXIge1xuICAgICAgbWluLXdpZHRoOiAkcHJpbnQtYm9keS1taW4td2lkdGggIWltcG9ydGFudDtcbiAgICB9XG5cbiAgICAvLyBCb290c3RyYXAgY29tcG9uZW50c1xuICAgIC5uYXZiYXIge1xuICAgICAgZGlzcGxheTogbm9uZTtcbiAgICB9XG4gICAgLmJhZGdlIHtcbiAgICAgIGJvcmRlcjogJGJvcmRlci13aWR0aCBzb2xpZCAkYmxhY2s7XG4gICAgfVxuXG4gICAgLnRhYmxlIHtcbiAgICAgIGJvcmRlci1jb2xsYXBzZTogY29sbGFwc2UgIWltcG9ydGFudDtcblxuICAgICAgdGQsXG4gICAgICB0aCB7XG4gICAgICAgIGJhY2tncm91bmQtY29sb3I6ICR3aGl0ZSAhaW1wb3J0YW50O1xuICAgICAgfVxuICAgIH1cblxuICAgIC50YWJsZS1ib3JkZXJlZCB7XG4gICAgICB0aCxcbiAgICAgIHRkIHtcbiAgICAgICAgYm9yZGVyOiAxcHggc29saWQgJGdyYXktMzAwICFpbXBvcnRhbnQ7XG4gICAgICB9XG4gICAgfVxuXG4gICAgLnRhYmxlLWRhcmsge1xuICAgICAgY29sb3I6IGluaGVyaXQ7XG5cbiAgICAgIHRoLFxuICAgICAgdGQsXG4gICAgICB0aGVhZCB0aCxcbiAgICAgIHRib2R5ICsgdGJvZHkge1xuICAgICAgICBib3JkZXItY29sb3I6ICR0YWJsZS1ib3JkZXItY29sb3I7XG4gICAgICB9XG4gICAgfVxuXG4gICAgLnRhYmxlIC50aGVhZC1kYXJrIHRoIHtcbiAgICAgIGNvbG9yOiBpbmhlcml0O1xuICAgICAgYm9yZGVyLWNvbG9yOiAkdGFibGUtYm9yZGVyLWNvbG9yO1xuICAgIH1cblxuICAgIC8vIEJvb3RzdHJhcCBzcGVjaWZpYyBjaGFuZ2VzIGVuZFxuICB9XG59XG4iXX0= */

@@ -1,8 +1,8 @@
-// Tables
+/* Tables*/
 
 @mixin table-row-variant($state, $background, $border: null) {
-  // Exact selectors below required to override `.table-striped` and prevent
-  // inheritance to nested tables.
+  /* Exact selectors below required to override `.table-striped` and prevent*/
+  /* inheritance to nested tables.*/
   .table-#{$state} {
     &,
     > th,
@@ -20,8 +20,8 @@
     }
   }
 
-  // Hover states for `.table-hover`
-  // Note: this is not available for cells or rows within `thead` or `tfoot`.
+  /* Hover states for `.table-hover`*/
+  /* Note: this is not available for cells or rows within `thead` or `tfoot`.*/
   .table-hover {
     $hover-background: darken($background, 5%);
 
@@ -37,3 +37,5 @@
     }
   }
 }
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIl90YWJsZS1yb3cuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxVQUFROztBQUVSO0VBQ0UsMkVBQXlFO0VBQ3pFLGlDQUErQjtFQUMvQjtJQUNFOzs7TUFHRSw2QkFBNkI7SUFDL0I7O0lBRUE7TUFDRTs7OztRQUlFLHFCQUFxQjtNQUN2QjtJQUNGO0VBQ0Y7O0VBRUEsbUNBQWlDO0VBQ2pDLDRFQUEwRTtFQUMxRTtJQUNFLDBDQUEwQzs7SUFFMUM7TUFDRTtRQUNFLG1DQUFtQzs7UUFFbkM7O1VBRUUsbUNBQW1DO1FBQ3JDO01BQ0Y7SUFDRjtFQUNGO0FBQ0YiLCJmaWxlIjoiX3RhYmxlLXJvdy5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLy8gVGFibGVzXG5cbkBtaXhpbiB0YWJsZS1yb3ctdmFyaWFudCgkc3RhdGUsICRiYWNrZ3JvdW5kLCAkYm9yZGVyOiBudWxsKSB7XG4gIC8vIEV4YWN0IHNlbGVjdG9ycyBiZWxvdyByZXF1aXJlZCB0byBvdmVycmlkZSBgLnRhYmxlLXN0cmlwZWRgIGFuZCBwcmV2ZW50XG4gIC8vIGluaGVyaXRhbmNlIHRvIG5lc3RlZCB0YWJsZXMuXG4gIC50YWJsZS0jeyRzdGF0ZX0ge1xuICAgICYsXG4gICAgPiB0aCxcbiAgICA+IHRkIHtcbiAgICAgIGJhY2tncm91bmQtY29sb3I6ICRiYWNrZ3JvdW5kO1xuICAgIH1cblxuICAgIEBpZiAkYm9yZGVyICE9IG51bGwge1xuICAgICAgdGgsXG4gICAgICB0ZCxcbiAgICAgIHRoZWFkIHRoLFxuICAgICAgdGJvZHkgKyB0Ym9keSB7XG4gICAgICAgIGJvcmRlci1jb2xvcjogJGJvcmRlcjtcbiAgICAgIH1cbiAgICB9XG4gIH1cblxuICAvLyBIb3ZlciBzdGF0ZXMgZm9yIGAudGFibGUtaG92ZXJgXG4gIC8vIE5vdGU6IHRoaXMgaXMgbm90IGF2YWlsYWJsZSBmb3IgY2VsbHMgb3Igcm93cyB3aXRoaW4gYHRoZWFkYCBvciBgdGZvb3RgLlxuICAudGFibGUtaG92ZXIge1xuICAgICRob3Zlci1iYWNrZ3JvdW5kOiBkYXJrZW4oJGJhY2tncm91bmQsIDUlKTtcblxuICAgIC50YWJsZS0jeyRzdGF0ZX0ge1xuICAgICAgQGluY2x1ZGUgaG92ZXIoKSB7XG4gICAgICAgIGJhY2tncm91bmQtY29sb3I6ICRob3Zlci1iYWNrZ3JvdW5kO1xuXG4gICAgICAgID4gdGQsXG4gICAgICAgID4gdGgge1xuICAgICAgICAgIGJhY2tncm91bmQtY29sb3I6ICRob3Zlci1iYWNrZ3JvdW5kO1xuICAgICAgICB9XG4gICAgICB9XG4gICAgfVxuICB9XG59XG4iXX0= */

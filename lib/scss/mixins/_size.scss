@@ -1,7 +1,9 @@
-// Sizing shortcuts
+/* Sizing shortcuts*/
 
 @mixin size($width, $height: $width) {
   width: $width;
   height: $height;
   @include deprecate("`size()`", "v4.3.0", "v5");
 }
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIl9zaXplLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsb0JBQWtCOztBQUVsQjtFQUNFLGFBQWE7RUFDYixlQUFlO0VBQ2YsOENBQThDO0FBQ2hEIiwiZmlsZSI6Il9zaXplLnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIvLyBTaXppbmcgc2hvcnRjdXRzXG5cbkBtaXhpbiBzaXplKCR3aWR0aCwgJGhlaWdodDogJHdpZHRoKSB7XG4gIHdpZHRoOiAkd2lkdGg7XG4gIGhlaWdodDogJGhlaWdodDtcbiAgQGluY2x1ZGUgZGVwcmVjYXRlKFwiYHNpemUoKWBcIiwgXCJ2NC4zLjBcIiwgXCJ2NVwiKTtcbn1cbiJdfQ== */

@@ -1,6 +1,6 @@
-// stylelint-disable declaration-no-important
+/* stylelint-disable declaration-no-important*/
 
-// Width and height
+/* Width and height*/
 
 @each $prop, $abbrev in (width: w, height: h) {
   @each $size, $length in $sizes {
@@ -11,10 +11,12 @@
 .mw-100 { max-width: 100% !important; }
 .mh-100 { max-height: 100% !important; }
 
-// Viewport additional helpers
+/* Viewport additional helpers*/
 
 .min-vw-100 { min-width: 100vw !important; }
 .min-vh-100 { min-height: 100vh !important; }
 
 .vw-100 { width: 100vw !important; }
 .vh-100 { height: 100vh !important; }
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIl9zaXppbmcuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSw4Q0FBNEM7O0FBRTVDLG9CQUFrQjs7QUFFbEI7RUFDRTtJQUNFLHVCQUF1Qiw0QkFBNEIsRUFBRTtFQUN2RDtBQUNGOztBQUVBLFVBQVUsMEJBQTBCLEVBQUU7QUFDdEMsVUFBVSwyQkFBMkIsRUFBRTs7QUFFdkMsK0JBQTZCOztBQUU3QixjQUFjLDJCQUEyQixFQUFFO0FBQzNDLGNBQWMsNEJBQTRCLEVBQUU7O0FBRTVDLFVBQVUsdUJBQXVCLEVBQUU7QUFDbkMsVUFBVSx3QkFBd0IsRUFBRSIsImZpbGUiOiJfc2l6aW5nLnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIvLyBzdHlsZWxpbnQtZGlzYWJsZSBkZWNsYXJhdGlvbi1uby1pbXBvcnRhbnRcblxuLy8gV2lkdGggYW5kIGhlaWdodFxuXG5AZWFjaCAkcHJvcCwgJGFiYnJldiBpbiAod2lkdGg6IHcsIGhlaWdodDogaCkge1xuICBAZWFjaCAkc2l6ZSwgJGxlbmd0aCBpbiAkc2l6ZXMge1xuICAgIC4jeyRhYmJyZXZ9LSN7JHNpemV9IHsgI3skcHJvcH06ICRsZW5ndGggIWltcG9ydGFudDsgfVxuICB9XG59XG5cbi5tdy0xMDAgeyBtYXgtd2lkdGg6IDEwMCUgIWltcG9ydGFudDsgfVxuLm1oLTEwMCB7IG1heC1oZWlnaHQ6IDEwMCUgIWltcG9ydGFudDsgfVxuXG4vLyBWaWV3cG9ydCBhZGRpdGlvbmFsIGhlbHBlcnNcblxuLm1pbi12dy0xMDAgeyBtaW4td2lkdGg6IDEwMHZ3ICFpbXBvcnRhbnQ7IH1cbi5taW4tdmgtMTAwIHsgbWluLWhlaWdodDogMTAwdmggIWltcG9ydGFudDsgfVxuXG4udnctMTAwIHsgd2lkdGg6IDEwMHZ3ICFpbXBvcnRhbnQ7IH1cbi52aC0xMDAgeyBoZWlnaHQ6IDEwMHZoICFpbXBvcnRhbnQ7IH1cbiJdfQ== */

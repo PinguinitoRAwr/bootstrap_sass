@@ -1,8 +1,10 @@
-// stylelint-disable declaration-no-important
+/* stylelint-disable declaration-no-important*/
 
-// Visibility
+/* Visibility*/
 
 @mixin invisible($visibility) {
   visibility: $visibility !important;
   @include deprecate("`invisible()`", "v4.3.0", "v5");
 }
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIl92aXNpYmlsaXR5LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsOENBQTRDOztBQUU1QyxjQUFZOztBQUVaO0VBQ0Usa0NBQWtDO0VBQ2xDLG1EQUFtRDtBQUNyRCIsImZpbGUiOiJfdmlzaWJpbGl0eS5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLy8gc3R5bGVsaW50LWRpc2FibGUgZGVjbGFyYXRpb24tbm8taW1wb3J0YW50XG5cbi8vIFZpc2liaWxpdHlcblxuQG1peGluIGludmlzaWJsZSgkdmlzaWJpbGl0eSkge1xuICB2aXNpYmlsaXR5OiAkdmlzaWJpbGl0eSAhaW1wb3J0YW50O1xuICBAaW5jbHVkZSBkZXByZWNhdGUoXCJgaW52aXNpYmxlKClgXCIsIFwidjQuMy4wXCIsIFwidjVcIik7XG59XG4iXX0= */

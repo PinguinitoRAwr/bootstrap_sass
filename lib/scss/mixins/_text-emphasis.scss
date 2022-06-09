@@ -1,6 +1,6 @@
-// stylelint-disable declaration-no-important
+/* stylelint-disable declaration-no-important*/
 
-// Typography
+/* Typography*/
 
 @mixin text-emphasis-variant($parent, $color, $ignore-warning: false) {
   #{$parent} {
@@ -15,3 +15,5 @@
   }
   @include deprecate("`text-emphasis-variant()`", "v4.4.0", "v5", $ignore-warning);
 }
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIl90ZXh0LWVtcGhhc2lzLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsOENBQTRDOztBQUU1QyxjQUFZOztBQUVaO0VBQ0U7SUFDRSx3QkFBd0I7RUFDMUI7RUFDQTtJQUNFO01BQ0U7UUFDRSwwRUFBMEU7TUFDNUU7SUFDRjtFQUNGO0VBQ0EsZ0ZBQWdGO0FBQ2xGIiwiZmlsZSI6Il90ZXh0LWVtcGhhc2lzLnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIvLyBzdHlsZWxpbnQtZGlzYWJsZSBkZWNsYXJhdGlvbi1uby1pbXBvcnRhbnRcblxuLy8gVHlwb2dyYXBoeVxuXG5AbWl4aW4gdGV4dC1lbXBoYXNpcy12YXJpYW50KCRwYXJlbnQsICRjb2xvciwgJGlnbm9yZS13YXJuaW5nOiBmYWxzZSkge1xuICAjeyRwYXJlbnR9IHtcbiAgICBjb2xvcjogJGNvbG9yICFpbXBvcnRhbnQ7XG4gIH1cbiAgQGlmICRlbXBoYXNpemVkLWxpbmstaG92ZXItZGFya2VuLXBlcmNlbnRhZ2UgIT0gMCB7XG4gICAgYSN7JHBhcmVudH0ge1xuICAgICAgQGluY2x1ZGUgaG92ZXItZm9jdXMoKSB7XG4gICAgICAgIGNvbG9yOiBkYXJrZW4oJGNvbG9yLCAkZW1waGFzaXplZC1saW5rLWhvdmVyLWRhcmtlbi1wZXJjZW50YWdlKSAhaW1wb3J0YW50O1xuICAgICAgfVxuICAgIH1cbiAgfVxuICBAaW5jbHVkZSBkZXByZWNhdGUoXCJgdGV4dC1lbXBoYXNpcy12YXJpYW50KClgXCIsIFwidjQuNC4wXCIsIFwidjVcIiwgJGlnbm9yZS13YXJuaW5nKTtcbn1cbiJdfQ== */
