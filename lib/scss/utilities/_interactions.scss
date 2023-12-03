@@ -1,7 +1,0 @@
-/* stylelint-disable declaration-no-important*/
-
-@each $value in $user-selects {
-  .user-select-#{$value} { -webkit-user-select: $value !important; -moz-user-select: $value !important; -ms-user-select: $value !important; user-select: $value !important; }
-}
-
-/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIl9pbnRlcmFjdGlvbnMuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSw4Q0FBNEM7O0FBRTVDO0VBQ0UseUJBQXlCLHNDQUE4QixFQUE5QixtQ0FBOEIsRUFBOUIsa0NBQThCLEVBQTlCLDhCQUE4QixFQUFFO0FBQzNEIiwiZmlsZSI6Il9pbnRlcmFjdGlvbnMuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIi8vIHN0eWxlbGludC1kaXNhYmxlIGRlY2xhcmF0aW9uLW5vLWltcG9ydGFudFxuXG5AZWFjaCAkdmFsdWUgaW4gJHVzZXItc2VsZWN0cyB7XG4gIC51c2VyLXNlbGVjdC0jeyR2YWx1ZX0geyB1c2VyLXNlbGVjdDogJHZhbHVlICFpbXBvcnRhbnQ7IH1cbn1cbiJdfQ== */
